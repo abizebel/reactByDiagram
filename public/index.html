@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>ReactByDiagram</title>
+    
+
+    <link href="vis/vis.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="vis/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="vis/vis.js"></script>
+    <script type="text/javascript" src="vis/options.js"></script>
+
+</head>
+
+<body>
+    <div id="network"></div>
+    <div id="node-popUp">
+        <span id="node-operation">node</span> <br>
+        <table style="margin:auto;">
+            <tr>
+                <td>label</td>
+                <td><input id="node-label" value="" /></td>
+            </tr>
+        </table>
+        <input type="button" value="save" id="node-saveButton" />
+        <input type="button" value="cancel" id="node-cancelButton" />
+    </div>
+    <div id="edge-popUp">
+        <span id="edge-operation">edge</span> <br>
+        <table style="margin:auto;">
+            <tr>
+                <td>label</td>
+                <td><input id="edge-label" value="new value" /></td>
+            </tr>
+        </table>
+        <input type="button" value="save" id="edge-saveButton" />
+        <input type="button" value="cancel" id="edge-cancelButton" />
+    </div>
+
+    
+
+    <div>
+        <div type="button" id="import_button" onclick="importNetwork()" >
+
+        </div>
+        <div type="button" id="export_button" onclick="exportNetwork()" >
+             <img src="img/export.png" width="25"> <span>Export</span>
+        </div>
+        <div type="button" id="destroy_button" onclick="destroyNetwork()">
+                 <img src="img/refresh.png" width="25"> <span>Refresh</span>
+        </div>
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
